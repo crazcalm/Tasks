@@ -82,6 +82,7 @@ func main() {
 	http.HandleFunc("/api/add-category/", views.AddCategoryFuncAPI)
 	http.HandleFunc("/api/update-category/", views.UpdateCategoryFuncAPI)
 	http.HandleFunc("/api/delete-category/", views.DeleteCategoryFuncAPI)
+	http.HandleFunc("/api/download-task-file/", views.DownloadTaskFileFunc)
 
 	log.Println("running server on ", values.ServerPort)
 	log.Fatal(http.ListenAndServe(values.ServerPort, nil))

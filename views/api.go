@@ -661,3 +661,8 @@ func DeleteCategoryFuncAPI(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 }
+
+//DownloadTaskFileFunc
+func DownloadTaskFileFunc(w http.ResponseWriter, r *http.Request){
+    log.Println("Downlaod file was clicked!")
+}
